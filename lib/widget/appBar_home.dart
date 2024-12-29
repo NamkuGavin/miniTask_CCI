@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mini_task_cci/widget/navbar_item.dart';
 
-class AppBarHome extends StatelessWidget {
+class AppBarHome extends StatefulWidget {
   const AppBarHome({super.key});
+
+  @override
+  State<AppBarHome> createState() => _AppBarHomeState();
+}
+
+class _AppBarHomeState extends State<AppBarHome> {
+  String? _selectedText;
 
   @override
   Widget build(BuildContext context) {
@@ -21,21 +29,49 @@ class AppBarHome extends StatelessWidget {
             style:
                 GoogleFonts.poppins(fontWeight: FontWeight.bold, fontSize: 20)),
         SizedBox(width: w * 0.05),
-        Text("Home",
-            style:
-                GoogleFonts.poppins(fontWeight: FontWeight.w600, fontSize: 17)),
+        NavbarItem(
+          text: "Home",
+          routeName: "/",
+          isSelected: _selectedText == "Home",
+          onSelected: () {
+            setState(() {
+              _selectedText = "Home";
+            });
+          },
+        ),
         SizedBox(width: w * 0.04),
-        Text("CSS",
-            style:
-                GoogleFonts.poppins(fontWeight: FontWeight.w600, fontSize: 17)),
+        NavbarItem(
+          text: "CSS",
+          routeName: "/CSS",
+          isSelected: _selectedText == "CSS",
+          onSelected: () {
+            setState(() {
+              _selectedText = "CSS";
+            });
+          },
+        ),
         SizedBox(width: w * 0.04),
-        Text("HTML",
-            style:
-                GoogleFonts.poppins(fontWeight: FontWeight.w600, fontSize: 17)),
+        NavbarItem(
+          text: "HTML",
+          routeName: "/HTML",
+          isSelected: _selectedText == "HTML",
+          onSelected: () {
+            setState(() {
+              _selectedText = "HTML";
+            });
+          },
+        ),
         SizedBox(width: w * 0.04),
-        Text("Javascript",
-            style:
-                GoogleFonts.poppins(fontWeight: FontWeight.w600, fontSize: 17)),
+        NavbarItem(
+          text: "Javascript",
+          routeName: "/JS",
+          isSelected: _selectedText == "JS",
+          onSelected: () {
+            setState(() {
+              _selectedText = "JS";
+            });
+          },
+        ),
         Expanded(child: Container()),
         ElevatedButton(
             onPressed: () {},

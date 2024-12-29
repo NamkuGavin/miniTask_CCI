@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
                       borderRadius: BorderRadius.circular(25),
                       border: Border.all(width: 1.5),
                     ),
-                    child: Text("Artikel",
+                    child: Text("Blog",
                         style:
                             GoogleFonts.poppins(fontWeight: FontWeight.w600)),
                   ),

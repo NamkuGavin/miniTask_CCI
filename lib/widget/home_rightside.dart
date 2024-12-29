@@ -79,7 +79,7 @@ class HomeRightside extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Text(
-          'Subscribe artikel saya',
+          'Subscribe blog saya',
           style: TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.bold,
