@@ -18,24 +18,24 @@ class AppBarHome extends StatelessWidget {
                 shape: BoxShape.circle, color: Colors.black)),
         SizedBox(width: w * 0.005),
         Text("NamkuGavin",
-            style: GoogleFonts.poppins(
-                fontWeight: FontWeight.bold, fontSize: 20)),
+            style:
+                GoogleFonts.poppins(fontWeight: FontWeight.bold, fontSize: 20)),
         SizedBox(width: w * 0.05),
         Text("Home",
-            style: GoogleFonts.poppins(
-                fontWeight: FontWeight.w600, fontSize: 17)),
+            style:
+                GoogleFonts.poppins(fontWeight: FontWeight.w600, fontSize: 17)),
         SizedBox(width: w * 0.04),
         Text("CSS",
-            style: GoogleFonts.poppins(
-                fontWeight: FontWeight.w600, fontSize: 17)),
+            style:
+                GoogleFonts.poppins(fontWeight: FontWeight.w600, fontSize: 17)),
         SizedBox(width: w * 0.04),
         Text("HTML",
-            style: GoogleFonts.poppins(
-                fontWeight: FontWeight.w600, fontSize: 17)),
+            style:
+                GoogleFonts.poppins(fontWeight: FontWeight.w600, fontSize: 17)),
         SizedBox(width: w * 0.04),
         Text("Javascript",
-            style: GoogleFonts.poppins(
-                fontWeight: FontWeight.w600, fontSize: 17)),
+            style:
+                GoogleFonts.poppins(fontWeight: FontWeight.w600, fontSize: 17)),
         Expanded(child: Container()),
         ElevatedButton(
             onPressed: () {},
